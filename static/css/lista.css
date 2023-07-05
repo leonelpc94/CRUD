@@ -1,0 +1,20 @@
+.bloque{
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);;
+}
+.bloque__e{
+    background: #f5c755;
+    border:3px solid black;
+    margin:10px ;
+    height: 150px;
+    border-radius: 5px;
+}
+.bloque__e__b{
+    padding-left: 10%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+.bloque__e__b__form__boton{
+    background: #f5c755;
+}

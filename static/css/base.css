@@ -1,0 +1,38 @@
+.base{
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 10% 80%;
+}
+.bordes{
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgb(54, 53, 53);
+}
+.base__lateral__form__boton{
+    border: none;
+    background-color: white;
+    margin-left: 20%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.base__lateral__form__boton:hover{
+    background-color: #ffb700;
+}
+.cabeza{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    background-color: #ffb700;
+    margin-bottom: 10px;
+}
+.cabeza__lista{
+    margin-left: 50% ;
+}
+.cabeza__img{
+    width : 200px;
+    margin-left: 60%;
+}
+.cabeza__form__boton{
+    border: none;
+    background-color: #ffb700;
+}

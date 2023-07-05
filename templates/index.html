@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/base.css">
+    <title>Seminario actualizacion</title>
+</head>
+<body>
+    <header class="cabeza">
+        <form class="cabeza__form" action="/">
+            <button class="cabeza__form__boton"><img class="cabeza__img" src="/static/img/logo-social.png"></button>
+        </form>
+        <ul class="cabeza__lista">
+            <li>Leonel Pajaro Castaño</li>
+            <li>Leiner Soraca Guevara</li>
+            <li>Jean Carlos Hernandez</li>
+            <li>Jhon Del tore</li>
+        </ul>
+    </header>
+    <div class="base">
+        <div class="base__lateral bordes">
+            <form class="base__lateral__form" action="/reg/registro" method="get">
+                <button class="base__lateral__form__boton" type="submit">Registo persona</button>
+            </form>
+            <form class="base__lateral__form" action="/lista" method="get">
+                <button class="base__lateral__form__boton" type="submit">Lista persona</button>
+            </form>
+        </div>
+        <div class="base__central bordes">
+            {% if name == 'logo' %}
+                {% include 'logo.html' %}
+            {% endif %}
+            {% if name == 'registro' %}
+                {% include 'registro.html' %}
+            {% endif %}
+            {% if name == 'list' %}
+                {% include 'lista.html' %}
+            {% endif %}
+            {% if name == 'actu' %}
+                {% include 'actualizar.html' %}
+            {% endif %}
+            <p>{{resultado}}</p>
+        </div>
+    </div>
+     
+</body>
+</html>

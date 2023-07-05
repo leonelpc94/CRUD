@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="/static/css/lista.css" type="text/css">
+<div class="bloque">
+{% for elem in lista%}
+    <div class="bloque__e">
+        <ul class="bloque__e__lista">
+            <li>{{elem.nombre}}</li>
+            <li>{{elem.edad}}</li>
+            <li>{{elem.telefono}}</li>
+            <li>{{elem.email}}</li>
+        </ul>
+        <div class="bloque__e__b">
+            <form class="bloque__e__b__form" action="/form/actualizar/actu/{{elem.id}}" method="get">
+                <button class="bloque__e__b__form__boton"><img src="/static/img/Edit_icon-icons.png" width="20px"></button> 
+            </form>
+            <form class="bloque__e__b__form" action="/delete/{{elem.id}}" method="get">
+                <button class="bloque__e__b__form__boton"><img src="/static/img/1214926-2700634736.png" width="20px"></button>
+            </form> 
+        </div>
+    </div>
+{% endfor %}
+</div>

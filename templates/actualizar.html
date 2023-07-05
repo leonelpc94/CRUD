@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/static/css/registro.css">
+<form class ="form" action="/actualizar/{{persona.id}}" method="post">
+    <div class="form__bloque">
+        <label for="">Nombre: </label>
+        <input type="text" name="nombre" value="{{persona.nombre}}" required>
+    </div>
+    <div class="form__bloque">
+        <label for="">Edad: </label>
+        <input type="text" name="edad" value="{{persona.edad}}" required>
+    </div>
+    <div class="form__bloque">
+        <label for="">Telefono: </label>
+        <input type="text" name="telefono" value="{{persona.telefono}}" required>
+    </div>
+    <div class="form__bloque">
+        <label for="">Email: </label>
+        <input type="text" name="email" value="{{persona.email}}" required>
+    </div>
+    <div>
+        <button type="submit">Actualizar</button>
+    </div>
+</form>
